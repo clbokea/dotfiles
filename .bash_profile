@@ -28,5 +28,3 @@ alias dk_jupiter='docker run --rm -p 8888:8888 -v ${PWD}:/home/jovyan/work clbo/
 # python container
 alias dk_python='docker run -it --rm -v ${PWD}:/docs python bash'
 
-# set key binding to Vim mode
-set -o vi

@@ -16,6 +16,13 @@ let mapleader=","
 set timeout timeoutlen=1500
 
 """""""""""""""""""""""""""""""""""
+" Search
+"""""""""""""""""""""""""""""""""""
+":set hlsearch
+" Press Space to turn off highlighting and clear any message already displayed.
+":nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+"""""""""""""""""""""""""""""""""""
 " Disable Swap files
 """""""""""""""""""""""""""""""""""
 set noswapfile
@@ -33,9 +40,9 @@ set backupcopy=yes
 " if the vim plugins manager vim-plug is not present, install it
 " using the system wide .vimrc
 if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 " directory for plugins
@@ -65,7 +72,9 @@ map <Leader>bg :let &background = ( &background == "dark"? "light" : "dark" )<CR
 " Fix indentation
 " map <F7> gg=G<C-o><C-o>
 
-
+" Spell checking toggle shortcuts
+map <F5> :setlocal spell! spelllang=da<CR>
+map <F4> :setlocal spell! spelllang=en_us<CR>
 
 " Disable parentheses matching depends on system. This way we should address all cases (?)
 set noshowmatch
@@ -73,14 +82,14 @@ set noshowmatch
 " loaded _after_ all files are.
 " " Trying disable MatchParen after loading all plugins
 function! g:FckThatMatchParen ()
-	if exists(":NoMatchParen")
-		:NoMatchParen
-	endif
+if exists(":NoMatchParen")
+	:NoMatchParen
+endif
 endfunction
 
 augroup plugin_initialize
-	autocmd!
-	autocmd VimEnter * call FckThatMatchParen()
+autocmd!
+autocmd VimEnter * call FckThatMatchParen()
 augroup END
 
 " Access system clipboard
