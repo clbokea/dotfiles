@@ -23,7 +23,7 @@ alias dk_sp_html='docker run --rm -v ${PWD}:/docs sphinx:3.3.0 /bin/sh -c "cd sp
 alias dk_sp_github='docker run --rm -v ${PWD}:/docs sphinx:3.3.0 /bin/sh -c "cd sphinx/; make github"'
 
 # Jupyter Notebook
-alias dk_jupiter='docker run --rm -p 8888:8888 -v ${PWD}:/home/jovyan/work clbo/jupyter'
+alias dk_jupiter='docker run --name jupyter -p 8888:8888 -v ${PWD}:/home/jovyan/work clbo/jupyter_base:6.4.2'
 
 # python container
 alias dk_python='docker run -it --rm -v ${PWD}:/docs python bash'
