@@ -32,6 +32,15 @@ set backupcopy=yes
 "set nowritebackup  "only in case you don't want a backup file while editing
 "set noswapfile     "no swap files
 
+"""""""""""""""""""""""""""""""""""
+" remap hjkl -> jklæ for navigation
+"""""""""""""""""""""""""""""""""""
+
+noremap æ l
+noremap l k
+noremap k j
+noremap j h
+
 
 """""""""""""""""""""""""""""""""""
 " Plugins
