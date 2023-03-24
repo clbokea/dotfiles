@@ -28,3 +28,17 @@ alias dk_jupiter='docker run --name jupyter -p 8888:8888 -v ${PWD}:/home/jovyan/
 # python container
 alias dk_python='docker run -it --rm -v ${PWD}:/docs python:3.10.1 bash'
 
+# CD into python/repos/spring2023
+alias cdpy='cd ~/Tresors/Kea/python/repos/spring2023'
+
+# CD into tech/repos
+alias cdte='cd ~/Tresors/Kea/tech/repos'
+
+###################
+# Env Variables ###
+###################
+
+#export jar_host=jdbc:mysql://localhost:3306/clbo
+#export jar_user=root
+#export jar_pass=1234
+. "$HOME/.cargo/env"

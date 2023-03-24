@@ -15,9 +15,14 @@ filetype indent plugin on
 let mapleader=","
 set timeout timeoutlen=1500
 
+" turn relative line numbers on
+:set relativenumber
+:set rnu
+
 """""""""""""""""""""""""""""""""""
 " Search
 """""""""""""""""""""""""""""""""""
+":set incsearch
 ":set hlsearch
 " Press Space to turn off highlighting and clear any message already displayed.
 ":nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
