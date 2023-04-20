@@ -38,6 +38,13 @@ set backupcopy=yes
 "set noswapfile     "no swap files
 
 """""""""""""""""""""""""""""""""""
+" enable backspace deletes
+"""""""""""""""""""""""""""""""""""
+
+set backspace=indent,eol,start
+
+
+"""""""""""""""""""""""""""""""""""
 " remap hjkl -> jklæ for navigation
 """""""""""""""""""""""""""""""""""
 
@@ -145,3 +152,4 @@ noremap <Right> <Nop>
 
 "let g:startify_custom_header = s:header
 "let g:startify_custom_footer = s:center(s:footer)
+

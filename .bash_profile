@@ -3,7 +3,7 @@
 ########################
 # startup path #########
 ########################
-cd ~/Tresors/Kea/python/
+# cd ~/Tresors/Kea/python/
 
 ##############################################
 # remove catalina warning about shift to zsh #
@@ -34,11 +34,8 @@ alias cdpy='cd ~/Tresors/Kea/python/repos/spring2023'
 # CD into tech/repos
 alias cdte='cd ~/Tresors/Kea/tech/repos'
 
-###################
-# Env Variables ###
-###################
 
-#export jar_host=jdbc:mysql://localhost:3306/clbo
-#export jar_user=root
-#export jar_pass=1234
-. "$HOME/.cargo/env"
+
+PATH="/usr/local/bin:$PATH"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
