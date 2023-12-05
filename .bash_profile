@@ -19,22 +19,27 @@ alias python='python3'
 alias pip='pip3'
 
 # Docker and sphinx python repos
-alias dk_sp_html='docker run --rm -v ${PWD}:/docs sphinx:3.3.0 /bin/sh -c "cd sphinx/; make html"'
-alias dk_sp_github='docker run --rm -v ${PWD}:/docs sphinx:3.3.0 /bin/sh -c "cd sphinx/; make github"'
+alias dk_sp_html='docker run --rm -v ${PWD}:/docs clbo/sphinx:5.3.0 make html'
+alias dk_sp_github='docker run --rm -v ${PWD}:/docs clbo/sphinx:5.3.0 make github'
 
 # Jupyter Notebook
-alias dk_jupiter='docker run --name jupyter -p 8888:8888 -v ${PWD}:/home/jovyan/work clbo/jupyter_base:6.4.2'
+alias dk_jupyter='docker run --name jupyter -p 8888:8888 -v ${PWD}:/home/jovyan/work clbo/jupyter:6.5.4'
 
 # python container
 alias dk_python='docker run -it --rm -v ${PWD}:/docs python:3.10.1 bash'
 
-# CD into python/repos/spring2023
-alias cdpy='cd ~/Tresors/Kea/python/repos/spring2023'
+# CD into python/repos/spring2024
+alias cdpy='cd ~/Tresors/Kea/python/repos/spring2024'
 
 # CD into tech/repos
 alias cdte='cd ~/Tresors/Kea/tech/repos'
 
+# CD into ita
+alias cdita='cd ~/Tresors/Kea/ITA/'
 
+
+# CD into Missing Semester repos
+alias cdsem='cd ~/Tresors/Kea/missing/'
 
 PATH="/usr/local/bin:$PATH"
 eval "$(/opt/homebrew/bin/brew shellenv)"

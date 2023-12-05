@@ -1,6 +1,6 @@
 set number
 set autowriteall
-set background=light
+set background=dark
 
 " Show working filename
 set laststatus=2
@@ -69,7 +69,11 @@ endif
 " directory for plugins
 call plug#begin('~/.vim/plugged')
 
+" Theme 
 Plug 'morhetz/gruvbox'
+
+"Surround
+Plug 'tpope/vim-surround'
 
 " Start intro screen
 " Plug 'mhinz/vim-startify'
