@@ -19,8 +19,8 @@ alias python='python3'
 alias pip='pip3'
 
 # Docker and sphinx python repos
-alias dk_sp_html='docker run --rm -v ${PWD}:/docs clbo/sphinx:5.3.0 make html'
-alias dk_sp_github='docker run --rm -v ${PWD}:/docs clbo/sphinx:5.3.0 make github'
+alias dk_sp_html='docker run --rm -v ${PWD}:/docs clbo/sphinx:7.1.2 make html'
+alias dk_sp_github='docker run --rm -v ${PWD}:/docs clbo/sphinx:7.1.2 make github'
 
 # Jupyter Notebook
 alias dk_jupyter='docker run --name jupyter -p 8888:8888 -v ${PWD}:/home/jovyan/work clbo/jupyter:6.5.4'
