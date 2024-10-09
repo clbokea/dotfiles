@@ -37,10 +37,6 @@ alias cdte='cd ~/Tresors/Kea/tech/repos'
 # CD into ita
 alias cdita='cd ~/Tresors/Kea/ITA/'
 
-
-# CD into Missing Semester repos
-alias cdsem='cd ~/Tresors/Kea/missing/'
-
 PATH="/usr/local/bin:$PATH"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
