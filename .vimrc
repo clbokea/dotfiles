@@ -157,3 +157,7 @@ noremap <Right> <Nop>
 "let g:startify_custom_header = s:header
 "let g:startify_custom_footer = s:center(s:footer)
 
+
+
+" Disable all mouse support (including scroll wheel) in Vim
+set mouse=
