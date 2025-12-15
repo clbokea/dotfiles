@@ -42,7 +42,7 @@ alias cdita='cd ~/Tresorit/Kea/ITA/'
 alias cddtu='cd ~/Tresorit/KEA/DTU/Discrete_math/'
 
 # Open markdown file in Google Chrome
-alias chrome='open -a "Google Chrome "'
+alias chrome='open -a "Google Chrome"'
 
 ###################
 # end aliases #####
